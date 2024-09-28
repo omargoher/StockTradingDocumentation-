@@ -22,7 +22,7 @@ This document provides a detailed overview of a stock trading system that allows
 
 ## Architecture
 ### Context Diagram
-![alt text](image.png)
+![alt text](Image/image.png)
 The context diagram provides a high-level overview of the system and its primary external interactions.
 #### System Overview:
 The stock trading system enables clients to interact with market exchanges and manage stock trading operations, such as creating or updating orders. It relies on various services such as authentication, order management, and streaming to execute the trading functions.
@@ -38,7 +38,7 @@ The stock trading system enables clients to interact with market exchanges and m
 - Market Exchange Service: Facilitates interaction between the e-commerce system and external stock markets.
 
 ### Container Diagram
-![alt text](image-1.png)
+![alt text](Image/image-1.png)
 The container diagram focuses on the core system components, describing how the services interact within the system.
 Core Containers:
 1. Client: 
@@ -63,7 +63,7 @@ Core Containers:
     - An external entity that the system interacts with to execute the client’s stock orders. The Market Exchange service fetches market data and transmits stock orders for execution.
 
 ### Component Diagram
-![alt text](image-2.png)
+![alt text](Image/image-2.png)
 The component diagram focuses on the Order Service, which is central to the system's operation.
 Components of Order Service:
 1. Order Processor:
@@ -81,7 +81,7 @@ Components of Order Service:
     - Once validated, the Order Repository stores the order in the SQL database, and the client is notified of the order's success or failure.
 
 ### Class Diagram
-![alt text](class.jpg)
+![alt text](Image/class.jpg)
 The class diagram outlines the structure of the Order Processor and related components in more technical detail.
 Main Classes:
 1. Order Processor:
